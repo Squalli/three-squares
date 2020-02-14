@@ -13,11 +13,23 @@
                 height: 600px;
                 background-color: white;
                 margin: auto;
+                position: relative;
+                text-align: center;
+               
+            }
+            #rouge, #vert, #bleu{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
             }
             #rouge{
                 width: 200px;
                 height: 200px;
                 background-color: red;
+     
             }
             #vert{
                 width: 100px;
@@ -29,16 +41,18 @@
                 height: 50px;
                 background-color: blue;
             }
-        
+            
         
         </style>
     </head>
     <body>
         <div id="container">
-            <div id="rouge">Rouge</div>
-            <div id="vert">Vert</div>
-            <div id="bleu">Bleu</div>
+            <div id="rouge">Rouge
+                <div id="vert">Vert
+                    <div id="bleu">Bleu</div>
+                </div>  
+            </div>
+            
         </div>
-        
     </body>
 </html>
